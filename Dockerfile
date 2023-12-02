@@ -1,6 +1,6 @@
 FROM python3
 
-WORKDIR .
+WORKDIR . 
 
 RUN pip install django==4.2.7
 
@@ -10,6 +10,6 @@ RUN python install -r requirements.txt
 
 RUN python manage.py migrate
 
-EXPOSE 8000
+EXPOSE 8000 
 
 CMD [python,manage.py,runserver,0.0.0.0:8000]
