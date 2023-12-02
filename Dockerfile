@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR . 
+WORKDIR . .
 
 RUN pip install django==4.2.7
 
